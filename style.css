@@ -306,7 +306,8 @@ nav li a {
     font-size: 30px;
 }
 
-@media (max-width: 600px) and (orientation: portrait) {
+/* @media (max-width: 600px) and (orientation: portrait) { */
+@media (max-width: 600px) {
     .phone {
         display: none;
     }
@@ -474,4 +475,20 @@ nav li a {
 .features li::before {
     content: "\1F410";
     margin-right: 10px;
+}
+
+/* @media (max-width: 600px) and (orientation: portrait) { */
+@media (max-width: 600px) {
+
+    .about-text,
+    .photo {
+        text-align: center;
+        flex-basis: 100%;
+        padding: 30px;
+    }
+
+    .features li {
+        width: 100%;
+    }
+
 }
