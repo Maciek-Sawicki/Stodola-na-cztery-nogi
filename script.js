@@ -1,31 +1,3 @@
-// const navSlide = () => {
-//     const burger = document.querySelector(".burger");
-//     const nav = document.querySelector(".nav-links");
-//     const navLinks = document.querySelectorAll(".nav-links li");
-  
-//     const menuFunction = () => {
-//       nav.classList.toggle("nav-active");
-//       navLinks.forEach((link, index) => {
-//         if (link.style.animation) {
-//           link.style.animation = "";
-//         } else {
-//           link.style.animation = `navLinkFade 0.5s ease forwards ${
-//             index / 7 + 0.3
-//           }s`;
-//         }
-//       });
-//       burger.classList.toggle("toggle");
-//     };
-  
-//     burger.addEventListener("click", menuFunction);
-  
-//     navLinks.forEach((link) => {
-//       link.addEventListener("click", menuFunction);
-//     });
-// };
-
-// navSlide();
-
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,
   centeredSlides: true,
@@ -42,7 +14,6 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
   },
 });
-
 
 const navSlide = () => {
   const burger = document.querySelector(".burger");
@@ -61,29 +32,9 @@ const navSlide = () => {
 navSlide();
 
 
-
-const burger2 = document.querySelector(".burger");
-
-
-// function navbarLock(burger2) {
-//   if (burger2.classList.contains("toggle")) {
-//     console.log("dziala")
-//   }
-// }
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
 
   el_autohide = document.querySelector('.autohide');
-  burger2.addEventListener("click", e => {
-    if (burger2.classList.contains("toggle")) {
-      console.log("ee")
-    }
-  });
-
-
   if (el_autohide) {
       var last_scroll_top = 0;
       window.addEventListener('scroll', function () {
@@ -97,12 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
               el_autohide.classList.add('scrolled-down');
           }
           last_scroll_top = scroll_top;
-
       });
       // window.addEventListener
-
   }
   // if
-  
-
 });
