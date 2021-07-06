@@ -17,7 +17,7 @@ var swiper = new Swiper(".mySwiper", {
 
 const navSlide = () => {
   const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav");
+  const nav = document.querySelector(".nav-wrapper");
   const navImg = document.querySelector(".nav-img");
 
   const menuFunction = () => {

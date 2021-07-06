@@ -17,15 +17,15 @@
 
 <body>
     <header class="autohide">
-        <div class="navbar">
-            <div class=" container">
+        <div class="container">
+            <div class="navbar">
                 <div class="burger">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
                 <div class="logo"><img src="img/logo.png" alt="logo"></div>
-                <div class="contact-nav">
+                <div>
                     <span class="phone">T: +48 696 945 927</span>
                     <span><a href=""><i class="far fa-envelope"></i></a></span>
                 </div>
@@ -33,7 +33,7 @@
         </div>
     </header>
     <section class="hero">
-        <div class="nav">
+        <div class="nav-wrapper">
             <nav>
                 <ul>
                     <li><a href="">O nas</a></li>
@@ -46,6 +46,7 @@
             </nav>
         </div>
         <div class="nav-img"></div>
+
         <div class="swiper-container mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="img/hero1.jpg" alt=""></div>
@@ -57,8 +58,10 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
-            <div class="hero-about">
-                <div class="text">
+
+            <div class="hero-text">
+                <!-- <div class="text"> -->
+                <div class="container text">
                     <h1>Stodoła na cztery nogi</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque sequi aspernatur rem
                         vero
@@ -69,13 +72,14 @@
             </div>
             <!-- Messenger Wtyczka czatu Code -->
             <div id="fb-root"></div>
-
-            <!-- Your Wtyczka czatu code -->
-            <div id="fb-customer-chat" class="fb-customerchat">
-            </div>
+            <div id="fb-customer-chat" class="fb-customerchat"></div>
         </div>
 
     </section>
+
+
+
+
     <section class="about">
         <div class="container">
             <div class="title">
@@ -83,17 +87,17 @@
                 <p class="teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero culpa quod, repellat
                     officiis perferendis dolorum quo quibusdam </p>
             </div>
-            <div class="main-content">
+            <div class="about-wrapper">
                 <div class="about-text">
                     <h3>Lorem ipsum dolor</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima harum soluta facilis corporis
                         qui, error laudantium impedit quo eius excepturi sunt assumenda, dicta labore facere omnis! Vero
                         temporibus quos dolore.</p>
                 </div>
-                <div class="photo">
+                <div class="about-photo">
                     <img src="img/hero1.jpg" alt="">
                 </div>
-                <div class="photo">
+                <div class="about-photo">
                     <img src="img/hero3.jpg" alt="">
                 </div>
                 <div class="about-text">
@@ -102,7 +106,6 @@
                         qui, error laudantium impedit quo eius excepturi sunt assumenda, dicta labore facere omnis! Vero
                         temporibus quos dolore.</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -116,7 +119,6 @@
             </div>
             <div class="features">
                 <ul>
-
                     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, nihil illo exercitationem,
                         impedit pariatur qui quas</li>
                     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, nihil illo exercitationem,
@@ -135,6 +137,7 @@
         </div>
     </section>
     <section class="gallery">
+        <h2>Galeria</h2>
         <div class="container">
             <div class="image-gallery">
                 <a href="img/gallery-1.jpg" class="img-1">
@@ -158,69 +161,77 @@
                 <a href="img/gallery-7.jpg" class="img-7">
                     <i class="fas fa-expand"></i>
                 </a>
-                <a href="img/gallery-8.jpg" class="img-8">
+                <a href="img/gallery-9.jpg" class="img-8">
                     <i class="fas fa-expand"></i>
                 </a>
             </div>
         </div>
     </section>
     <section class="faq">
-        <h2 class="faq-title">Centrum informacji</h2>
-
-        <div class="faq-container active">
-            <div class="question">
-                <h3>Kiedy można przyjechać?</h3>
-                <i class="fas fa-chevron-down active"></i>
+        <div class="container faq">
+            <h2 class="faq-title">Centrum informacji</h2>
+            <div class="faq-container active">
+                <div class="question">
+                    <h3>Kiedy można przyjechać?</h3>
+                    <i class="fas fa-chevron-down active"></i>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam culpa aspernatur voluptas
+                        odit
+                        laudantium fugiat recusandae inventore dolorem, ex ipsam accusantium officia blanditiis dicta
+                        eos
+                        rem, quia unde maiores.</p>
+                </div>
             </div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam culpa aspernatur voluptas odit
-                    laudantium fugiat recusandae inventore dolorem, ex ipsam accusantium officia blanditiis dicta eos
-                    rem, quia unde maiores.</p>
+            <div class="faq-container">
+                <div class="question">
+                    <h3>Kiedy można przyjechać?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam culpa aspernatur voluptas
+                        odit
+                        laudantium fugiat recusandae inventore dolorem, ex ipsam accusantium officia blanditiis dicta
+                        eos
+                        rem, quia unde maiores.</p>
+                </div>
             </div>
-        </div>
-        <div class="faq-container">
-            <div class="question">
-                <h3>Kiedy można przyjechać?</h3>
-                <i class="fas fa-chevron-down"></i>
+            <div class="faq-container">
+                <div class="question">
+                    <h3>Kiedy można przyjechać?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam culpa aspernatur voluptas
+                        odit
+                        laudantium fugiat recusandae inventore dolorem, ex ipsam accusantium officia blanditiis dicta
+                        eos
+                        rem, quia unde maiores.</p>
+                </div>
             </div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam culpa aspernatur voluptas odit
-                    laudantium fugiat recusandae inventore dolorem, ex ipsam accusantium officia blanditiis dicta eos
-                    rem, quia unde maiores.</p>
-            </div>
-        </div>
-        <div class="faq-container">
-            <div class="question">
-                <h3>Kiedy można przyjechać?</h3>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam culpa aspernatur voluptas odit
-                    laudantium fugiat recusandae inventore dolorem, ex ipsam accusantium officia blanditiis dicta eos
-                    rem, quia unde maiores.</p>
-            </div>
-        </div>
-        <div class="faq-container">
-            <div class="question">
-                <h3>Kiedy można przyjechać?</h3>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam culpa aspernatur voluptas odit
-                    laudantium fugiat recusandae inventore dolorem, ex ipsam accusantium officia blanditiis dicta eos
-                    rem, quia unde maiores.</p>
+            <div class="faq-container">
+                <div class="question">
+                    <h3>Kiedy można przyjechać?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam culpa aspernatur voluptas
+                        odit
+                        laudantium fugiat recusandae inventore dolorem, ex ipsam accusantium officia blanditiis dicta
+                        eos
+                        rem, quia unde maiores.</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="handmade">
 
     </section>
-    <section class="contact-wrapper">
-        <div class="container-contact">
-            <div class="img">
-
+    <section class="contact">
+        <div class="container footer">
+            <div class="contact-img">
             </div>
-            <div class="contact">
+            <div class="contact-wrapper">
                 <h2 class="contact-title">Kontakt</h2>
                 <p>Zadzwoń lub napisz wiadomość aby umówić spotkanie</p>
                 <div class="info">
@@ -281,31 +292,37 @@
         </div> -->
     </section>
     <footer>
-        <div class="about">
-            <h2>Stodoła na cztery nogi</h2>
-            <p>Kameralne miejsce, gdzie w ciszy i spokoju możesz odsapnąć od zgiełku miasta i natłoku codziennych zajęć.
-            </p>
+        <div class="container footer">
+            <div class="footer-about">
+                <h2>Stodoła na cztery nogi</h2>
+                <p>Kameralne miejsce, gdzie w ciszy i spokoju możesz odsapnąć od zgiełku miasta i natłoku codziennych
+                    zajęć.
+                </p>
+            </div>
+            <div class="navigation">
+                <h3>Stodoła</h3>
+                <a href="">O nas</a>
+                <a href="">Oferta</a>
+                <a href="">Galeria</a>
+                <a href="">FAQ</a>
+                <a href="">Rękodzieło</a>
+                <a href="">Kontakt</a>
+            </div>
 
-        </div>
-        <div class="besnik">
-            <h3>Stodoła</h3>
-            <a href="">O nas</a>
-            <a href="">Oferta</a>
-            <a href="">Galeria</a>
-            <a href="">FAQ</a>
-            <a href="">Rękodzieło</a>
-            <a href="">Kontakt</a>
-        </div>
-        <div class="support">
-            <h3>Media społecznościowe</h3>
-            <a href="">Facebook</a>
-            <a href="">Instagram</a>
-        </div>
-        <div class="contact">
-            <h3>Kontakt</h3>
-            <p>T: 696 945 927</p>
-            <a href="">Messenger</a>
-            <a href="">Email</a>
+            <div class="contact">
+                <h3>Kontakt</h3>
+                <p>18-106</p>
+                <p>Turośń Kościelna</p>
+                <p>Strażacka 3</p>
+                <a href=""> T: 696 945 927</a>
+                <a href="">Messenger</a>
+                <a href="">Email</a>
+            </div>
+            <div class="social">
+                <h3>Media społecznościowe</h3>
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+            </div>
         </div>
     </footer>
     <div class="copyright">
