@@ -69,26 +69,22 @@
             <div class="swiper-pagination"></div>
 
             <div class="hero-text">
-                <!-- <div class="text"> -->
-                <div class="container text">
-                    <h1>Stodoła na cztery nogi</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque sequi aspernatur rem
-                        vero
-                        velit
-                        iusto vel magnam neque repudiandae reiciendis, officia voluptatem</p>
-                    <a href="#" class="btn">Umów spotkanie</a>
+                <div class="container">
+                    <div class="text">
+                        <h1>Stodoła na cztery nogi</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque sequi aspernatur rem
+                            vero
+                            velit
+                            iusto vel magnam neque repudiandae reiciendis, officia voluptatem</p>
+                        <a href="#" class="btn">Umów spotkanie</a>
+                    </div>
                 </div>
             </div>
-            <!-- Messenger Wtyczka czatu Code -->
+            <!-- Messenger Chatbox -->
             <div id="fb-root"></div>
             <div id="fb-customer-chat" class="fb-customerchat"></div>
         </div>
-
     </section>
-
-
-
-
     <section class="about">
         <div class="container">
             <div class="title">
@@ -234,7 +230,6 @@
         </div>
     </section>
     <section class="handmade">
-
     </section>
     <section class="contact">
         <div class="container">
@@ -270,9 +265,7 @@
                         <li><a href=""><i class="fab fa-instagram"></i>Instagram</a></li>
                     </ul>
                 </div>
-
             </div>
-
         </div>
         <!-- <div class="map">
             <div class="mapouter">
@@ -317,7 +310,6 @@
                 <a href="">Rękodzieło</a>
                 <a href="">Kontakt</a>
             </div>
-
             <div class="contact">
                 <h3>Kontakt</h3>
                 <p>18-106</p>
@@ -333,47 +325,18 @@
                 <a href="">Instagram</a>
             </div>
         </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2021 by Stodoła na cztery nogi. Wszelkie prawa zastrzeżone.</p>
+            <p>Projekt i realizacja: Maciej Sawicki</p>
+        </div>
     </footer>
-    <div class="copyright">
-        <p>Copyright &copy; 2021 by Stodoła na cztery nogi. Wszelkie prawa zastrzeżone.</p>
-        <p>Projekt i realizacja: Maciej Sawicki</p>
-    </div>
-
-
 
 
     <script src="https://kit.fontawesome.com/71d4c605d7.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-
     <script src="script.js"></script>
-
-
-
-
-    <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "107580524920161");
-        chatbox.setAttribute("attribution", "biz_inbox");
-
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v11.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
 </body>
 
 </html>

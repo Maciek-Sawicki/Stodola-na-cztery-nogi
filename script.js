@@ -1,3 +1,5 @@
+
+// HERO SECTION SWIPER
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,
   centeredSlides: true,
@@ -15,6 +17,8 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+// NAVIGATION
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-wrapper");
@@ -31,7 +35,7 @@ const navSlide = () => {
 
 navSlide();
 
-
+// AUTOHIDE HEADER NAVIGATION
 document.addEventListener("DOMContentLoaded", function () {
 
   el_autohide = document.querySelector('.autohide');
@@ -54,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // if
 });
 
+// FAQS CONTAINERS
+
 const faqs = document.querySelectorAll(".faq-container");
 
 faqs.forEach(faq => {
@@ -61,3 +67,24 @@ faqs.forEach(faq => {
     faq.classList.toggle("active");
   })
 })
+
+// FACEBOOK CHATBOX MESSENGER
+
+var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "107580524920161");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
