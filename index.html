@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpaki - Stodoła na cztery nogi</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
@@ -70,7 +71,7 @@
 
             <div class="hero-text">
                 <div class="container">
-                    <div class="text">
+                    <div class="text" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
                         <h1>Stodoła na cztery nogi</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque sequi aspernatur rem
                             vero
@@ -87,12 +88,12 @@
     </section>
     <section class="about">
         <div class="container">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
                 <h2>O nas</h2>
                 <p class="teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero culpa quod, repellat
                     officiis perferendis dolorum quo quibusdam </p>
             </div>
-            <div class="about-wrapper">
+            <div class="about-wrapper" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
                 <div class="about-text">
                     <h3>Lorem ipsum dolor</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima harum soluta facilis corporis
@@ -115,7 +116,7 @@
         </div>
     </section>
     <section class="offer">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
             <div class="offer-logo">
                 <div class="logo-black">
                     <img src="img/logo-black.png" alt="logo">
@@ -141,7 +142,7 @@
             <div class="animals"></div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
         <h2>Galeria</h2>
         <div class="container">
             <div class="image-gallery">
@@ -173,7 +174,7 @@
         </div>
     </section>
     <section class="faq">
-        <div class="container faq">
+        <div class="container faq" data-aos="fade-down" data-aos-delay="0" data-aos-duration="400">
             <h2 class="faq-title">Centrum informacji</h2>
             <div class="faq-container active">
                 <div class="question">
@@ -232,7 +233,7 @@
     <section class="handmade">
     </section>
     <section class="contact">
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-delay="50" data-aos-duration="500">
             <div class="contact-img">
             </div>
             <div class="contact-wrapper">
@@ -269,7 +270,7 @@
         </div>
     </section>
     <section class="map">
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
             <h3>Jak do nas dojechać?</h3>
             <div class="mapouter">
                 <div class="gmap_canvas">
@@ -324,6 +325,10 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="script.js"></script>
 </body>
 
