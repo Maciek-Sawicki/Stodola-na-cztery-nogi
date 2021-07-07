@@ -627,7 +627,7 @@ nav a {
 
 .image-gallery a {
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -674,7 +674,7 @@ nav a {
 
 .img-2 {
     grid-area: gallery-2;
-    min-height: 51.5rem;
+    min-height: 61.5rem;
     background-image: url("img/gallery-2.jpg");
 }
 
@@ -705,7 +705,7 @@ nav a {
 
 .img-8 {
     grid-area: gallery-8;
-    min-height: 51.5rem;
+    min-height: 61.5rem;
     background-image: url("img/gallery-8.jpg");
 }
 
