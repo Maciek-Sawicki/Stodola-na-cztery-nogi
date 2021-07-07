@@ -985,6 +985,49 @@ form .btn:hover {
     margin-right: 10px;
 }
 
+/* GOOGLE MAPS */
+
+.map {
+    /* padding: 50px 0; */
+    /* background-color: #9da87a; */
+    margin-bottom: 50px;
+}
+
+.map h3 {
+    font-size: var(--heading3);
+    font-family: var(--font-s);
+    font-weight: 300;
+    text-align: center;
+    margin: 20px;
+}
+
+.map .container {
+    /* margin: 0 auto; */
+    border: 1px solid #ddd;
+}
+
+.mapouter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: right;
+    height: 440px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 440px;
+    width: 100%;
+}
+
+.gmap_canvas iframe {
+    width: 100%;
+    height: 100%;
+}
+
 /* FOOTER SECTION */
 
 footer {
