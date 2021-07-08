@@ -825,6 +825,39 @@ i {
     }
 }
 
+/* HANDMADE SECTION */
+.handmade p {
+    font-size: var(--paragraph-R);
+    font-family: var(--font-ss);
+    line-height: var(--line-height-R);
+    margin: 20px 0;
+}
+
+.handmade-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.handmade-text,
+.handmade-photo {
+    flex-basis: 50%;
+    padding: 30px;
+}
+
+.handmade-photo img {
+    width: 100%;
+    box-shadow: 5px 5px 5px #333;
+}
+
+.handmade-text h3 {
+    font-size: var(--heading3);
+    font-family: var(--font-s);
+    font-weight: 300;
+    margin: 20px 0px;
+}
+
 /* CONTACT SECTION */
 
 .contact .container {
