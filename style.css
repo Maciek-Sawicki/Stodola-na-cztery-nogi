@@ -149,6 +149,16 @@ span a {
     }
 }
 
+@media screen and (max-height: 470px) and (orientation: landscape) {
+    .autohide {
+        height: 60px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
+
 
 /* HERO SECTION */
 
@@ -259,7 +269,7 @@ nav a {
     }
 }
 
-@media screen and (max-height: 350px) and (orientation: landscape) {
+@media screen and (max-height: 470px) and (orientation: landscape) {
     nav li {
         margin: 5px;
     }
