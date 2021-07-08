@@ -17,6 +17,8 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+//SCROLL LOCK
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
@@ -66,6 +68,7 @@ const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-wrapper");
   const navImg = document.querySelector(".nav-img");
+  const navLinks = document.querySelectorAll(".nav-wrapper li");
 
   const menuFunction = () => {
     nav.classList.toggle("nav-active");
@@ -84,6 +87,11 @@ const navSlide = () => {
 
   burger.addEventListener("click", menuFunction);
   burger.addEventListener("click", scrollFix);
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", menuFunction);
+    link.addEventListener("click", scrollFix);
+  });
 };
 
 navSlide();
