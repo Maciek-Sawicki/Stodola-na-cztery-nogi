@@ -67,6 +67,10 @@ html {
     width: 100%;
 }
 
+.nav-contact {
+    display: flex;
+}
+
 .nav-contact a {
     text-decoration: none;
     color: #000;
@@ -119,6 +123,32 @@ span a {
     max-width: 100%;
     max-height: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .phone {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .autohide {
+        height: 60px;
+        background-color: #FFF;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1030;
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
+
 
 /* HERO SECTION */
 
@@ -209,6 +239,32 @@ nav a {
         transform: translateX(0px);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+
+    .nav-img {
+        display: none;
+    }
+
+    nav li {
+        margin: 15px;
+    }
+
+    nav a {
+        font-size: var(--paragraph-L);
+        padding: 5px;
+    }
+}
+
+@media screen and (max-height: 350px) and (orientation: landscape) {
+    nav li {
+        margin: 5px;
+    }
+}
+
 
 .swiper-slide {
     text-align: center;
@@ -310,6 +366,24 @@ nav a {
 
 .btn:hover::before {
     transform: translate(5px, 5px);
+}
+
+@media screen and (max-width: 768px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: var(--heading2);
+        line-height: 40px;
+    }
+
+    .text p {
+        font-size: var(--paragraph-R);
+        line-height: var(--line-height-S);
+    }
 }
 
 /* @media (max-width: 600px) and (orientation: portrait) { */
@@ -463,6 +537,15 @@ nav a {
     margin: 20px 0px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .about-text,
+    .about-photo {
+        flex-basis: 100%;
+        padding: 30px;
+    }
+}
+
 /* OFFER SECTION */
 
 .offer {
@@ -521,8 +604,15 @@ nav a {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .features li {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
 /* @media (max-width: 600px) and (orientation: portrait) { */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
 
     .about-text,
     .about-photo {
@@ -616,7 +706,7 @@ nav a {
     nav li a {
         font-size: 22px;
     }
-}
+} */
 
 /* GALLERY SECTION */
 
@@ -627,6 +717,16 @@ nav a {
     text-align: center;
     font-weight: 300;
 }
+
+.gallery h2::before {
+    content: "";
+    background-color: #f2f2f2;
+    width: 2px;
+    height: 50px;
+    display: block;
+    margin: 30px auto;
+}
+
 
 .image-gallery {
     display: grid;
@@ -765,6 +865,7 @@ nav a {
     font-family: var(--font-s);
     margin: 2rem 0rem;
     font-weight: 300;
+    text-align: center;
 }
 
 .faq-container {
@@ -773,6 +874,7 @@ nav a {
     padding-bottom: 20px;
     border-bottom: 2px solid #000;
     cursor: pointer;
+    margin: 20px;
 }
 
 .question {
@@ -858,6 +960,31 @@ i {
     margin: 20px 0px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .handmade-text,
+    .handmade-photo {
+        flex-basis: 100%;
+        padding: 30px;
+    }
+
+    .box1 {
+        order: 1;
+    }
+
+    .box2 {
+        order: 2;
+    }
+
+    .box3 {
+        order: 4;
+    }
+
+    .box4 {
+        order: 3;
+    }
+}
+
 /* CONTACT SECTION */
 
 .contact .container {
@@ -872,6 +999,7 @@ i {
     background-image: url("img/gallery-2.jpg");
     background-size: cover;
     background-position: center;
+    flex-shrink: 100px;
 }
 
 .contact-wrapper {
@@ -901,6 +1029,7 @@ i {
     list-style: none;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .info-1::before,
@@ -928,6 +1057,7 @@ i {
 .info li {
     font-size: var(--paragraph-L);
     font-family: var(--font-ss);
+    padding: 5px;
 }
 
 .info li a {
@@ -1015,6 +1145,7 @@ form .btn:hover {
 .social-media ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .social-media li {
@@ -1032,11 +1163,26 @@ form .btn:hover {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-img {
+        display: none;
+    }
+
+    .contact-wrapper {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 /* GOOGLE MAPS */
 
 .map {
-    /* padding: 50px 0; */
-    /* background-color: #9da87a; */
     margin-bottom: 50px;
 }
 
