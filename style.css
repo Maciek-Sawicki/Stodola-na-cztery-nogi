@@ -235,6 +235,7 @@ nav a {
     font-family: var(--font-ss);
     padding: 10px;
     transition: 0.3s ease;
+    display: block;
 }
 
 @keyframes navLinkFade {
