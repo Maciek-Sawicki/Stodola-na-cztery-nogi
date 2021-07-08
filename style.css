@@ -172,6 +172,7 @@ nav ul {
 nav li {
     margin: 30px;
     text-align: center;
+    opacity: 0;
 }
 
 nav li::after {
@@ -194,6 +195,19 @@ nav a {
     font-family: var(--font-ss);
     padding: 10px;
     transition: 0.3s ease;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateX(0px);
+    }
 }
 
 .swiper-slide {

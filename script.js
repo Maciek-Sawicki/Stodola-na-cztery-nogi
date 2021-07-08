@@ -74,6 +74,16 @@ const navSlide = () => {
     nav.classList.toggle("nav-active");
     navImg.classList.toggle("nav-img-active");
     burger.classList.toggle("toggle");
+
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.4s ease forwards ${
+          index / 7 + 0.2
+        }s`;
+      }
+    });
   };
 
   const scrollFix = () => {
