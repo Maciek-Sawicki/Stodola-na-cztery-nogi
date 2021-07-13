@@ -160,3 +160,63 @@ var chatbox = document.getElementById('fb-customer-chat');
             js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+
+//FORM VALIDATION
+const username = document.getElementById('name');
+const nameText = document.getElementById('name-text');
+const email = document.getElementById('email');
+const emailText = document.getElementById('email-text');
+const message = document.getElementById('message');
+const messageText = document.getElementById('message-text');
+const form = document.getElementById('form');
+
+
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  checkInputs();
+  
+  
+})
+
+function checkInputs() {
+  const emailValue = email.value.trim();
+
+
+  if (username.value === '' || username.value == null) {
+    username.classList.remove("success");
+    username.classList.add("error");
+    nameText.classList.add("error-text");
+  }
+  else {
+    nameText.classList.remove("error-text");
+    username.classList.add("success");
+  }
+
+  if (message.value === '' || message.value == null) {
+    message.classList.remove("success");
+    message.classList.add("error");
+    messageText.classList.add("error-text");
+  }
+  else {
+    messageText.classList.remove("error-text");
+    message.classList.add("success");
+  }
+
+  if (emailValue === '' || emailValue == null) {
+    email.classList.add("error");
+    emailText.classList.add("error-text")
+  } else if (!isEmail(emailValue)) {
+    email.classList.add("error");
+    emailText.classList.add("error-text")
+  }
+  else {
+    emailText.classList.remove("error-text");
+    email.classList.add("success");
+  }
+}
+
+function isEmail(email) {
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}

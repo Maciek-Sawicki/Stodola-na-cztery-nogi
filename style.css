@@ -1092,6 +1092,30 @@ form .btn:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.contact-form form .error {
+    border: 2px solid #e74c3c;
+    border-radius: 4px;
+}
+
+small {
+    visibility: hidden;
+}
+
+small.error-text {
+    color: #e74c3c;
+    font-size: var(--paragraph-S);
+    font-family: var(--font-ss);
+    margin-bottom: 5px;
+    visibility: visible;
+}
+
+.contact-form form .success {
+    border: 2px solid #3ce74a;
+    border-radius: 4px;
+}
+
+
+
 
 .social-media {
     margin: 40px 0;
