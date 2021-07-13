@@ -205,13 +205,16 @@ function checkInputs() {
   }
 
   if (emailValue === '' || emailValue == null) {
+    email.classList.remove("success");
     email.classList.add("error");
     emailText.classList.add("error-text")
   } else if (!isEmail(emailValue)) {
+    email.classList.remove("success");
     email.classList.add("error");
     emailText.classList.add("error-text")
   }
   else {
+    email.classList.remove("error");
     emailText.classList.remove("error-text");
     email.classList.add("success");
   }
