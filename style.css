@@ -8,6 +8,7 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
+    font-display: optional;
 }
 
 
@@ -978,7 +979,7 @@ i {
     font-weight: 300;
 }
 
-.contact-wrapper h5 {
+.contact-wrapper p {
     font-size: var(--heading5);
     font-weight: 300;
     font-family: var(--font-ss);
