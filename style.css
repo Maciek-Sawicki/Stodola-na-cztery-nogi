@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 10px;
     scroll-behavior: smooth;
@@ -351,6 +356,46 @@ nav a {
 }
 
 .btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 40px;
+    border: 2px solid #fff;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--paragraph-L);
+    font-family: var(--font-ss);
+    text-decoration: none;
+    transition: color 300ms ease-out;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #fff;
+    transition: transform 300ms ease-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.btn:hover::before,
+.btn:focus::before {
+    transform: scaleX(1);
+}
+
+.btn:hover,
+.btn:focus {
+    color: #000;
+}
+
+/* .btn {
     text-decoration: none;
     padding: 15px 40px;
     font-size: var(--paragraph-L);
@@ -378,7 +423,7 @@ nav a {
 
 .btn:hover::before {
     transform: translate(5px, 5px);
-}
+} */
 
 @media screen and (max-width: 768px) {
 
@@ -1074,23 +1119,19 @@ i {
 }
 
 form .btn {
-    width: 250px;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: var(--paragraph-L);
-    font-family: var(--font-ss);
-    position: relative;
     color: #000;
-    text-align: center;
-    background-color: transparent;
     align-self: flex-end;
-    border: 2px solid #666;
-    cursor: pointer;
-    transition: .4s;
+    border: 2px solid #000;
+
 }
 
-form .btn:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+form .btn::before {
+    background-color: #000;
+}
+
+form .btn:hover,
+form .btn:focus {
+    color: #fff;
 }
 
 .contact-form form .error {
